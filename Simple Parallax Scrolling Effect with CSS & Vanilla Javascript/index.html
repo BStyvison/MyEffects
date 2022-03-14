@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon Light Parralax Effects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <img src="./Imagens/bg.jpg" alt="Sky" id="sky">
+        <img src="./Imagens/moon.png" alt="Moon" id="moon">
+        <img src="./Imagens/mountain.png" alt="Mountain" id="mountain">
+        <img src="./Imagens/road.png" alt="Road" id="road">
+        <h2 id="text">Moon light</h2>
+    </section>
+    
+    <script type="text/javascript"> 
+    let bg = document.getElementById('sky')
+    let moon = document.getElementById('moon')
+    let mountain = document.getElementById('mountain')
+    let road = document.getElementById('road')
+    let text = document.getElementById('text')
+
+    window.addEventListener('scroll', function(){
+        var value = window.scrollY;
+
+        bg.style.top = value * 0.5 + 'px'
+        moon.style.left = -value * 0.5 + 'px'
+        mountain.style.top = -value * 0.15 + 'px'
+        road.style.top = value * 0.15 + 'px'
+        text.style.top = value * 1 + 'px'
+    })
+    </script>
+</body>
+</html>

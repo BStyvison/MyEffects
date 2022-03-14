@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProgressBar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="progressBar"></div>
+    <div id="scrollPath"></div>
+    <section>
+        <h2>Creative Scroll Progress Bar</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id veritatis repellat tempore recusandae, voluptates explicabo, laudantium quos est dolores laborum aperiam accusamus ad? Nihil ipsa, dolor ut corrupti tenetur doloribus?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id veritatis repellat tempore recusandae, voluptates explicabo, laudantium quos est dolores laborum aperiam accusamus ad? Nihil ipsa, dolor ut corrupti tenetur doloribus?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id veritatis repellat tempore recusandae, voluptates explicabo, laudantium quos est dolores laborum aperiam accusamus ad? Nihil ipsa, dolor ut corrupti tenetur doloribus?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id veritatis repellat tempore recusandae, voluptates explicabo, laudantium quos est dolores laborum aperiam accusamus ad? Nihil ipsa, dolor ut corrupti tenetur doloribus?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id veritatis repellat tempore recusandae, voluptates explicabo, laudantium quos est dolores laborum aperiam accusamus ad? Nihil ipsa, dolor ut corrupti tenetur doloribus?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id veritatis repellat tempore recusandae, voluptates explicabo, laudantium quos est dolores laborum aperiam accusamus ad? Nihil ipsa, dolor ut corrupti tenetur doloribus?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id veritatis repellat tempore recusandae, voluptates explicabo, laudantium quos est dolores laborum aperiam accusamus ad? Nihil ipsa, dolor ut corrupti tenetur doloribus?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id veritatis repellat tempore recusandae, voluptates explicabo, laudantium quos est dolores laborum aperiam accusamus ad? Nihil ipsa, dolor ut corrupti tenetur doloribus?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id veritatis repellat tempore recusandae, voluptates explicabo, laudantium quos est dolores laborum aperiam accusamus ad? Nihil ipsa, dolor ut corrupti tenetur doloribus?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id veritatis repellat tempore recusandae, voluptates explicabo, laudantium quos est dolores laborum aperiam accusamus ad? Nihil ipsa, dolor ut corrupti tenetur doloribus?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id veritatis repellat tempore recusandae, voluptates explicabo, laudantium quos est dolores laborum aperiam accusamus ad? Nihil ipsa, dolor ut corrupti tenetur doloribus?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id veritatis repellat tempore recusandae, voluptates explicabo, laudantium quos est dolores laborum aperiam accusamus ad? Nihil ipsa, dolor ut corrupti tenetur doloribus?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id veritatis repellat tempore recusandae, voluptates explicabo, laudantium quos est dolores laborum aperiam accusamus ad? Nihil ipsa, dolor ut corrupti tenetur doloribus?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id veritatis repellat tempore recusandae, voluptates explicabo, laudantium quos est dolores laborum aperiam accusamus ad? Nihil ipsa, dolor ut corrupti tenetur doloribus?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id veritatis repellat tempore recusandae, voluptates explicabo, laudantium quos est dolores laborum aperiam accusamus ad? Nihil ipsa, dolor ut corrupti tenetur doloribus?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id veritatis repellat tempore recusandae, voluptates explicabo, laudantium quos est dolores laborum aperiam accusamus ad? Nihil ipsa, dolor ut corrupti tenetur doloribus?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id veritatis repellat tempore recusandae, voluptates explicabo, laudantium quos est dolores laborum aperiam accusamus ad? Nihil ipsa, dolor ut corrupti tenetur doloribus?</p>
+    </section>
+
+    <script type="text/javascript">
+        var progress = document.getElementById('progressBar');
+        var totalHeight=document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function(){
+           var progressHeight = (window.pageYOffset / totalHeight) * 100;
+           progress.style.height = progressHeight + "%";
+        }
+     </script>
+
+</body>
+</html>
