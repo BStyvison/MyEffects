@@ -19,6 +19,20 @@ section p{
     color: #fff;
 }
 
+section a {
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+    padding: 6px 15px;
+    border-radius: 20px;
+    
+}
+
+section a:hover {
+    background-color: white;
+    color: black;
+}
+
 ::-webkit-scrollBar {
     width: 0;
 }
