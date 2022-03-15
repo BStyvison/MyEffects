@@ -59,3 +59,10 @@ span {
         opacity: 0;
     }
 }
+
+section a{
+    display: flex;
+    top: 124px;
+    left: -17%;
+    
+}
