@@ -28,10 +28,13 @@
     </section>
 
     <script type="text/javascript">
+        window.onresize=function(){
+                location.reload();
+            }
         var progress = document.getElementById('progressBar');
-        var totalHeight=document.body.scrollHeight - window.innerHeight;
+        var totalHeight = document.body.scrollHeight - window.innerHeight;
         window.onscroll = function(){
-           var progressHeight = (window.pageYOffset / totalHeight) * 100;
+           let progressHeight = (window.pageYOffset / totalHeight) * 100;
            progress.style.height = progressHeight + "%";
         }
      </script>

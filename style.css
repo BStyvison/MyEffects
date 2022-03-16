@@ -184,3 +184,10 @@ section p{
     }
 
 }   
+
+
+/* ProgressBar*/
+
+::-webkit-scrollBar {
+    width: 0;
+}
