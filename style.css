@@ -102,6 +102,7 @@ nav ul li a {
     padding: 10px 15px;
     font-size: 1.2em;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 nav ul li a:hover{
@@ -160,9 +161,52 @@ section p{
         visibility: visible;
     }
 
+
+    /*Effect wavy*/
     nav ul li a{
-        font-size: 2em;
+        color: rgba(255, 255, 255, 0.199);
+        font-size: 2.5em;
+        font-weight: 900;
     }
+
+    nav ul li a:hover{
+        color: rgba(255, 255, 255, 0.199);
+    }
+
+    ul li a::before{
+        content:attr(data-text);
+        position: absolute;
+        background: url(imagens/wave.png);
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        background-repeat: repeat-x;
+        animation: wave 2s linear infinite;
+        transition: 0.5s;
+        width: 0;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    
+    nav ul li a:hover::before{
+        width: 100%;
+        
+    }
+    
+    @keyframes wave 
+    {
+        0%
+        {
+            background-position: 0px;
+        }
+        100%
+        {
+            background-position: 200px;
+        }
+        
+    }
+
+    /*End Effect*/
+
 
     header.sticky .toggle {
         position: fixed;
