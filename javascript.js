@@ -10,3 +10,17 @@ document.querySelector('.toggle').onclick = function(){
     this.classList.toggle('active')
     navigation.classList.toggle('active')
 }
+
+//ScroolBar
+
+window.onresize=function(){
+    location.reload();
+}
+let progress = document.getElementById('progressBar');
+let totalHeight = document.body.scrollHeight - window.innerHeight;
+window.onscroll = function(){
+let progressHeight = (window.pageYOffset / totalHeight) * 100;
+progress.style.height = progressHeight + "%";
+}
+
+
