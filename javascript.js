@@ -12,6 +12,7 @@ document.querySelector('.toggle').onclick = function(){
 }
 
 //ScroolBar
+ 
 
 window.onresize=function(){
     location.reload();
