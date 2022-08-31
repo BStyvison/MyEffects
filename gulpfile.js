@@ -25,9 +25,9 @@ exports.compilaSass = compilaSass
 // Função para juntar o JS
 function gulpJS() {
   return gulp
-    .src('js/scripts/**/*.js')
-    .pipe(concat('main.js'))
-    .pipe(gulp.dest('js/'))
+    .src('js/modules/**/*.js')
+    .pipe(concat('javascript.js'))
+    .pipe(gulp.dest('./'))
     .pipe(browserSync.stream());
 }
 
@@ -48,7 +48,7 @@ exports.browser = browser
 // Função de watch do Gulp
 function watch() {
   gulp.watch('css/scss/**/*.scss', compilaSass);
-  gulp.watch('js/scripts/**/*.js', gulpJS);
+  gulp.watch('js/modules/**/*.js', gulpJS);
   gulp.watch(['*.html']).on('change', browserSync.reload);
 }
 
